@@ -1,5 +1,3 @@
-
-
 import { useState, useEffect } from "react";
 import {nanoid} from 'nanoid'
 import NotesList from "./components/NotesList";
@@ -36,22 +34,6 @@ const App = () => {
     date: "24/05/2022"
   }])
 
-  // useEffect(()=> {
-  //   const savedNotes = JSON.parse(
-	// 		localStorage.getItem('react-notes-app-data')
-	// 	);
-  //   if (savedNotes) {
-	// 		setNotes(savedNotes);
-	// 	}
-	// }, []);
-  
-
-  // useEffect(() => {
-	// 	localStorage.setItem(
-	// 		'react-notes-app-data',
-	// 		JSON.stringify(notes)
-	// 	);
-	// }, [notes]);
   useEffect(() => {
     const savedNotes = JSON.parse(localStorage.getItem('react-notes-app-data'));
     if(savedNotes) {
